@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - 27018:27017
+  capture_info_app:
+    build:
+      context: ./capture_info_app
+      dockerfile: Dockerfile
+    container_name: capture_info_app
+    ports:
+      - 3000:3000
+  set_info_app:
+    build:
+      context: ./set_info_app
+      dockerfile: Dockerfile
+    container_name: set_info_app
+    ports:
+      - 3001:3000
