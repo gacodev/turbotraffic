@@ -19,9 +19,9 @@ este comando ejecutara la creacion de los microservicio y los conectara mediante
 
 ## informacion importante. puertos y configuraciones establecidas a nivel global
 
-microservicio 1 : get_info_app opera en el puerto 3000 interno 3000
-microservicio 2 : set_info_app opera en el puerto 3000 interno 3001 externo
-microservicio 3 : mongodb opera en el puerto 27017 interno y 27018 externo 
+- microservicio 1 : get_info_app opera en el puerto 3000 interno 3000
+- microservicio 2 : set_info_app opera en el puerto 3000 interno 3001 externo
+- microservicio 3 : mongodb opera en el puerto 27017 interno y 27018 externo 
 
 ## como acceder a los microservicios via http ##
 
@@ -29,7 +29,7 @@ para visualizar como se exponen se abre un navegador y se escribe en la barra de
 
 ## comprobar mediante postman
 
-1. cree una peticion http de tipo post con el objetivo de enviar los datos.
+- cree una peticion http de tipo post con el objetivo de enviar los datos.
 
 ## recomendaciones ##
 
