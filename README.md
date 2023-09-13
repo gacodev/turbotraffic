@@ -1,7 +1,15 @@
-# turbotraffic
+# turbotraffic API
+# clonacion del repositorio e inicializacion de los submodulos
+
+```bash
+git clone git@github.com:gabrielcontrerasv/turbotraffic.git
+cd turbotraffic 
+git submodule init
+git submodule update --recursive
+```
 ## conexion de dos microservicios usando mongoose 
 
-para construir la aplicacion ejecute el siguiente comando
+para construir la aplicacion ejecute el siguiente comando estando en la ruta de la carpeta del proyecto.
 
 ```bash
 docker-compose up
