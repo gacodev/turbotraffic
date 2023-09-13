@@ -1,15 +1,15 @@
 # turbotraffic
 ## conexion de dos microservicios usando mongoose 
 
+para construir la aplicacion ejecute el siguiente comando
+
 ```bash
 docker-compose up
 ```
 
-
 este comando ejecutara la creacion de los microservicio y los conectara mediante las rutas que estan establecidas en el docker-composer-yml apuntando a cada app
 
-
-## puertos y configuraciones establecidas a nivel global
+## informacion importante. puertos y configuraciones establecidas a nivel global
 
 microservicio 1 : get_info_app opera en el puerto 3000 interno 3000
 microservicio 2 : set_info_app opera en el puerto 3000 interno 3001 externo
