@@ -1,0 +1,6 @@
+[submodule "set_info_app"]
+	path = set_info_app
+	url = git@github.com:gabrielcontrerasv/set_info_app.git
+[submodule "capture_info_app"]
+	path = capture_info_app
+	url = git@github.com:gabrielcontrerasv/capture_info_app.git
