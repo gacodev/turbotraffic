@@ -1,9 +1,10 @@
 # turbotraffic
 ## conexion de dos microservicios usando mongoose 
 
-´´´bash
-docker-compose up 
-´´´
+```bash
+docker-compose up
+```
+
 
 este comando ejecutara la creacion de los microservicio y los conectara mediante las rutas que estan establecidas en el docker-composer-yml apuntando a cada app
 
@@ -28,11 +29,11 @@ para visualizar como se exponen se abre un navegador y se escribe en la barra de
 2. seleccione el checkbox raw
 3. al final de la seccion seleccion en la lista desplegable la opcion json
 2. en el body de la peticion debe enviar un objeto con la siguiente estructura
-´´´bash 
+```bash
 {
     toSaveInMongo: "contenido del campo a almacenar"
 }
-´´´
+```
 
 # comprobacion de los resultados 
 
