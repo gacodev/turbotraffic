@@ -1,4 +1,9 @@
 # turbotraffic API
+
+# coleccion de Postman
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/20082346-bc29e6b0-254a-43ee-bb21-a18ea354c0ba?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D20082346-bc29e6b0-254a-43ee-bb21-a18ea354c0ba%26entityType%3Dcollection%26workspaceId%3D3fc380d8-cc70-4f32-8659-3199f494a889)
+
 # clonacion del repositorio e inicializacion de los submodulos
 
 ```bash
@@ -40,17 +45,15 @@ para visualizar como se exponen se abre un navegador y se escribe en la barra de
 2. en el body de la peticion debe enviar un objeto con la siguiente estructura
 ```bash
 {
-    toSaveInMongo: "contenido del campo a almacenar"
+    data: "contenido del campo a almacenar"
 }
 ```
+ importante el campo debe ser un string pues tiene validaciones 
 
 # comprobacion de los resultados 
 
-## comprobar por postman 
 
-1. con postman puede obtener los resultados mediante una peticion de tipo get dirigida a localhost:3000
-
-## lo puede hacer mediante un gestor de base de datos a continuacion puede descargarlo para su sistema operativo de preferencia
+## mediante un gestor de base de datos que puede descargarlo para su sistema operativo de preferencia
 
 1. descargue el gestor de base de datos desde esta web https://www.mongodb.com/try/download/compass
 2. instalelo en el computador donde esta ejecutando del docker-compose.yml
