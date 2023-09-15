@@ -6,6 +6,7 @@ git clone git@github.com:gabrielcontrerasv/turbotraffic.git
 cd turbotraffic 
 git submodule init
 git submodule update --recursive
+git submodule update --remote
 ```
 ## conexion de dos microservicios usando mongoose 
 
