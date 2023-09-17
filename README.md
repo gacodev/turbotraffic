@@ -61,7 +61,7 @@ para visualizar como se exponen se abre un navegador y se escribe en la barra de
 
 1. descargue el gestor de base de datos desde esta web https://www.mongodb.com/try/download/compass
 2. instalelo en el computador donde esta ejecutando del docker-compose.yml
-3. conectese por medio del puerto que se determinó (27018)
+3. conectese por medio del puerto que se determinó (27017)
 4. cree o permita a los microservicios crear la base datos para puedan almacenar la informacion
 
 ## recomendaciones rabbitmq
