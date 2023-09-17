@@ -6,6 +6,12 @@ services:
     container_name: mongo
     ports:
       - 27018:27017
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbit-nest
+    ports:
+      - 5672:5672
+      - 15672:15672    
   capture_info_app:
     build:
       context: ./capture_info_app
