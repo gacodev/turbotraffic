@@ -5,24 +5,44 @@ services:
     image: mongo:latest
     container_name: mongo
     ports:
-      - 27018:27017
+      - 27017:27017
+    networks:
+      - turbotraffic
+
   rabbitmq:
     image: rabbitmq:3-management
     container_name: rabbit-nest
     ports:
       - 5672:5672
-      - 15672:15672    
+      - 15672:15672
+    networks:
+      - turbotraffic
+
   capture_info_app:
     build:
       context: ./capture_info_app
       dockerfile: Dockerfile
     container_name: capture_info_app
     ports:
-      - 3000:3000
+      - 3000:5001
+    networks:
+      - turbotraffic
+    environment:
+      - STORE_DATA_SERVICE_URL=http://set_info_app:4001/api/v1
+
   set_info_app:
     build:
       context: ./set_info_app
       dockerfile: Dockerfile
     container_name: set_info_app
     ports:
-      - 3001:3000
+      - 3001:4001
+    networks:
+      - turbotraffic
+    environment:
+      - RABBITMQ_URL=amqp://rabbitmq:5672
+      - MONGO_URL=mongodb://mongo:27017/turbotraffic
+
+networks:
+  turbotraffic:
+    driver: bridge
